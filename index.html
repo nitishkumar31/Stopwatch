@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Stopwatch</title>
+  <meta name="description" content="It is an online stopwatch." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- External CSS File Link -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- External JS File Link -->
+
+  <!-- Favicon Icon-->
+  <link rel="icon" type="image/png" href="./img/favicon.ico" />
+
+  <!-- jquery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+    
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- NAV SECTION -->
+  <nav class="navbar navbar-default  navbar-expand-lg  bg-white thinner">
+    <div class="container-fluid">
+        <div class="maintitle">
+          <img src="./img/logo3.png"  alt="" class="title-logo"> <span id="title1">Stopwatch</span>
+        </div>
+      <button class="navbar-toggler"  type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars-staggered" style="color: #000000;"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item px-4">
+            <a class="nav-link btn secondary"
+              style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#003333;"
+              href="#">CLOCK</a>
+            <a class="nav-link btn secondary"
+              style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#003333;"
+              href="#">TIMER</a>
+          </li>
+        </ul>
+        <div id="switch-theme">
+          <input type="checkbox" id="light" class="checkbox">
+          <label for="checkbox" class="label">
+            <i class='fas fa-sun'></i>
+            <i class="fas fa-moon"></i>
+            <div class='ball'>
+            </div>
+          </label>
+        </div>
+      </div>
+  </nav>
+  <!-- STOPWATCH SECTION -->
+  <div class="container-fluid">
+    <div id="container">
+      <div>
+        <div id="time">
+          <span>
+            <span class="digit" id="hr">00</span>
+            <span class="txt">hr &nbsp;</span>
+          </span>
+          <span>
+            <span class="digit" id="min">00</span>
+            <span class="txt">min &nbsp;</span>
+          </span>
+          <span>
+            <span class="digit" id="sec">00</span>
+            <span class="txt">sec &nbsp;</span>
+          </span>
+          <span>
+            <span class="digit" id="count">00</span>
+            <span class="txt">ms &nbsp;</span>
+          </span>
+        </div>
+        <span class="todayDate">
+          <h3><span id="d1"></span></h3>
+        </span>
+      </div>
+      <hr />
+      <div id="btn-container">
+        <button class="buttons" id="start" onclick="start()">
+          <i class="fas fa-play-circle"></i> Start
+        </button>
+        <button class="buttons" id="reset" onclick="reset()">
+          <i class="fas fa-undo"></i> Reset
+        </button>
+        <button class="buttons" id="lap" onclick="lap()">
+          <i class="fas fa-stopwatch"></i> Split
+        </button>
+        <button class="buttons" id="clearlap" onclick="clearLap()">
+          <i class="fas fa-trash"></i> Clear Split
+        </button>
+      </div>
+      <div>
+        <div id="record-container">
+          <table id="record-table">
+            <tr>
+              <th>Split Number</th>
+              <th>Time</th>
+              <th>Diff</th>
+            </tr>
+            <tbody id="record-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+
+   
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-fluid my-class">
+      <div class="container">
+          <ul class="social-links">
+            <li class="hov">
+              <a href="https://github.com/nitishkumar31">
+                <i class="fa-brands fa-square-github link"></i>
+              </a>
+            </li>
+            <li class="hov">
+              <a href="https://www.linkedin.com/in/nitish31/">
+                <i class="fa-brands fa-linkedin link"></i>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    </container>
+  </footer>
+
+  <!-- Font Awesome script link -->
+  <script
+  src="https://kit.fontawesome.com/8f9585ba75.js"
+  crossorigin="anonymous"
+></script>
+
+<!-- Externaal javascript file link -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
