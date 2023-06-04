@@ -1,12 +1,12 @@
-<h1>Stop Watch</h1>
+<h1>Stopwatch</h1>
 
-**Web link** -
+**Web link** - https://nitishkumar31.github.io/Stopwatch/
 
 - **Time** is the most essential part of everyone's life and keeping track of this time is equally important.
   <br>
 - A **clock** helps us in our quest to utilize our time efficiently. In order to assist you to excel in this quest we are building a digital stopwatch.
   <br>
-- This **stopwatch** represents the time in **DD:HH:MM:SS** `(day:hour:minute:second)` format, making it easy to keep track of our time.
+- This **stopwatch** represents the time in **HH:MM:SS** `(hour:minute:second)` format, making it easy to keep track of our time.
   <br>
 - The functionalities of **Start, Stop, Reset, Split and Clear Split** are accessible by a click of a button.
   <br>
@@ -30,11 +30,11 @@
 
 <h2>Screenshots</h2>
 
-> Interface of the StopWatch
+> Interface of the Stopwatch
 
 ![image](./img/Screenshot_2023-06-05_042940.png)
 
-> StopWatch Started
+> Stopwatch Started
 
 <img width="922" alt="image" src="./img/Screenshot-started_2023-06-05_042803.png">
 
